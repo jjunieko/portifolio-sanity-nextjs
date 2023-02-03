@@ -2,7 +2,8 @@ import styles from './Header.module.scss';
 import { RiLinkedinFill, RiWhatsappFill } from 'react-icons/ri';
 import { AiFillInstagram, AiOutlineArrowDown } from 'react-icons/ai';
 import useSanityImage from 'src/hooks/useSanityImage';
-import Image from 'next/image';
+// import Image from 'next/image';
+import Image from 'next/legacy/image'
 
 const Header = ({ header, social }) => {
   const { image, name, ocupation, summary } = header;
@@ -22,13 +23,13 @@ const Header = ({ header, social }) => {
           <p>{summary}</p>
         </div>
         <div className={styles.social}>
-          <a href={linkedin}>
+          <a href={linkedin} target="_blank" rel="noopener noreferrer">
             <RiLinkedinFill className={styles.icon} />
           </a>
-          <a href={instagram}>
+          <a href={instagram} target="_blank" rel="noopener noreferrer">
             <AiFillInstagram className={styles.icon} />
           </a>
-          <a href={whatsapp}>
+          <a href={whatsapp} target="_blank" rel="noopener noreferrer">
             <RiWhatsappFill className={styles.icon} />
           </a>
         </div>

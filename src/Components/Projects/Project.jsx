@@ -1,6 +1,7 @@
 import useSanityImage from 'src/hooks/useSanityImage';
 import styles from './Project.module.scss';
-import Image from 'next/image';
+// import Image from 'next/image';
+import Image from 'next/legacy/image'
 import { AiFillGithub } from 'react-icons/ai';
 
 const Project = ({ project }) => {

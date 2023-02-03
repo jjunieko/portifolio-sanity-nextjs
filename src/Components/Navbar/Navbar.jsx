@@ -1,5 +1,6 @@
 import styles from './Navbar.module.scss';
-import Image from 'next/image';
+// import Image from 'next/image';
+import Image from 'next/legacy/image'
 import Navlink from './Navlink';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -17,7 +18,7 @@ const Navbar = () => {
     <section className={styles['navbar-wrapper']}>
       <div className={styles.navbar}>
         <a href='/' className={styles.logo}>
-          <Image src='/logo.jpeg' layout='fixed' width={42} height={27} />
+          <Image src='/logo.jpeg' layout='fixed' width={50} height={40} />
         </a>
         <nav>
           <ul className={styles.list}>
